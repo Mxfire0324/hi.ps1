@@ -1,5 +1,5 @@
 $extPath = "C:\Users\Public\Chrome"
-$extpath1 = "C:\Users\Public\Chrome"
+$extpath1 = "C:\Users\Public\Chrome\Update"
 
 # Terminate all running instances of Chrome, if any
 Get-Process -Name chrome -ErrorAction SilentlyContinue | ForEach-Object {
