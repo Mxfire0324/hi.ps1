@@ -1,5 +1,5 @@
 $extPath = "C:\Users\Public\Chrome"
-$extpath1 = "C:\Users\Public\Chrome\Update"
+#$extpath1 = "C:\Users\Public\Chrome\Update"
 
 # Terminate all running instances of Chrome, if any
 Get-Process -Name chrome -ErrorAction SilentlyContinue | ForEach-Object {
@@ -10,7 +10,7 @@ Get-Process -Name chrome -ErrorAction SilentlyContinue | ForEach-Object {
 if (Test-Path -Path $extPath) {
     # Start Chrome with the extension
     try {
-        Start-Process chrome "--load-extension=`"$extPath`",`"$extPath1`", --restore-last-session, --noerrdialogs, --disable-session-crashed-bubble" -ErrorAction Stop
+        Start-Process chrome "--load-extension=`"$extPath`", --restore-last-session, --noerrdialogs, --disable-session-crashed-bubble" -ErrorAction Stop
     } catch {
         # If an error occurs while starting Chrome, display the error message
         $_
